@@ -38,7 +38,7 @@ public class CutsceneActivator : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            Debug.Log("Input key detected");
+            //Debug.Log("Input key detected");
             //StopCoroutine("CutsceneActivationRoutine");
             StopAllCoroutines();
             StartCoroutine("CutsceneActivationRoutine");
