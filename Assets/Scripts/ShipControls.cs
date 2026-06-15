@@ -16,7 +16,7 @@ public class ShipControls : MonoBehaviour
     private float _yawInput = 0;
 
     [SerializeField]
-    private float _objectZRotation;
+    private ParticleSystem _spaceDustParticleSystem;
 
     // Start is called before the first frame update
     void Start()
@@ -37,20 +37,30 @@ public class ShipControls : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            _currentSpeed++;
-            if (_currentSpeed > 4)
+            _currentSpeed+=4;
+            if (_currentSpeed > 16)
             {
-                _currentSpeed = 4;
+                _currentSpeed = 16;
             }
+
+            //Change speed of dust particles
+            var main = _spaceDustParticleSystem.main;
+            main.startSpeed = _currentSpeed * 20f / 3f;
+
         }//increase speed
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            _currentSpeed--;
+            _currentSpeed-=4;
             if (_currentSpeed < 1)
             {
                 _currentSpeed = 1;
             }
+
+            //Change speed of dust particles
+            var main = _spaceDustParticleSystem.main;
+            main.startSpeed = _currentSpeed * 20f / 3f;
+
         }//decrease speed
 
         // Additional code for yaw movement
@@ -76,8 +86,6 @@ public class ShipControls : MonoBehaviour
         transform.Rotate(rotateV * _rotSpeed * Time.deltaTime);
 
         transform.Rotate(new Vector3(_vertical * 0.2f, _yawInput * 0.1f, -_horizontal * 0.5f), Space.Self);
-
-        _objectZRotation = _shipModel.transform.rotation.z;
 
         transform.position += transform.forward * _currentSpeed * Time.deltaTime;
     }
