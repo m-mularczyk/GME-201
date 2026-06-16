@@ -8,26 +8,20 @@ public class CutsceneActivator : MonoBehaviour
     [SerializeField]
     private CameraManager _cameraManager;
 
-    [SerializeField]
-    private float _timeWaiting = 5f;
-    [SerializeField]
-    private bool _mouseNotMoving = false;
-    [SerializeField]
-    private bool _timerIsCounting = false;
-    [SerializeField]
-    private bool _cutsceneIsPlaying = false;
+    [SerializeField] private float _timeWaiting = 5f;
+    //[SerializeField] private bool _mouseNotMoving = false;
+    //[SerializeField] private bool _timerIsCounting = false;
+    [SerializeField] private bool _cutsceneIsPlaying = false;
 
     private Vector3 _mousePosition;
     private Vector3 _lastMousePosition;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         StartCoroutine("CutsceneActivationRoutine");
         _lastMousePosition = Input.mousePosition;
     }
 
-    // Update is called once per frame
     void Update()
     {
         AnyKeyInputDetection();
@@ -66,12 +60,12 @@ public class CutsceneActivator : MonoBehaviour
         if (_mousePosition == _lastMousePosition)
         {
             // Mouse is not moving
-            _mouseNotMoving = true;
+            //_mouseNotMoving = true;
         }
         else
         {
             // Mouse is moving
-            _mouseNotMoving = false;
+            //_mouseNotMoving = false;
             _lastMousePosition = _mousePosition;
             StopAllCoroutines();
             StartCoroutine("CutsceneActivationRoutine");
@@ -82,12 +76,12 @@ public class CutsceneActivator : MonoBehaviour
 
     IEnumerator CutsceneActivationRoutine()
     {
-        _timerIsCounting = true;
+        //_timerIsCounting = true;
         yield return new WaitForSeconds(_timeWaiting);
         //Debug.Log("5 seconds without input");
         _cameraManager.PlayCutscene();
         _cutsceneIsPlaying = true;
         Debug.Log("Cutscene activated");
-        _timerIsCounting = false;
+        //_timerIsCounting = false;
     }
 }

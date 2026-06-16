@@ -79,7 +79,7 @@ public class ShipControls : MonoBehaviour
             _yawInput = 0;
         }
 
-            Vector3 rotateH = new Vector3(0, _horizontal, 0);
+        Vector3 rotateH = new Vector3(0, _horizontal, 0);
         transform.Rotate(rotateH * _rotSpeed * Time.deltaTime);
 
         Vector3 rotateV = new Vector3(_vertical, 0, 0);

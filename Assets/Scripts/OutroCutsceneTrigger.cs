@@ -3,20 +3,7 @@ using UnityEngine.Playables;
 
 public class OutroCutsceneTrigger : MonoBehaviour
 {
-    [SerializeField]
-    private PlayableDirector _outroCutsceneTimeline;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private PlayableDirector _outroCutsceneTimeline;
 
     void OnTriggerEnter(Collider other)
     {

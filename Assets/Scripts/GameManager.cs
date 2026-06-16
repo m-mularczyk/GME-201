@@ -1,23 +1,37 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private int _ringsCollected = 0;
+    [SerializeField] private PlayableDirector _outroTimeline;
+    [SerializeField] private GameObject _firstRingToCollect;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _firstRingToCollect.SetActive(false);
     }
 
     public void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Debug.Log("Za³adowano scenê ponownie");
+    }
+
+    public void ShowFirstRingToCollect()
+    {
+        _firstRingToCollect.SetActive(true);
+    }
+
+    public void NewRingCollected()
+    {
+        _ringsCollected++;
+        //Debug.Log("New ring collected");
+    }
+
+    public void LastRingCollected()
+    {
+        // Launching Outro cutscene
+        _outroTimeline.Play();
     }
 }
