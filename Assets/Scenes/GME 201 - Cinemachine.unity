@@ -595,11 +595,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -98.3
+      value: -98.7
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 304
+      value: 424.4
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1013,11 +1013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -24.6
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 371.6
+      value: 505.3
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1100,11 +1100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 7.6
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 548
+      value: 707.1
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1760,7 +1760,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 506379539}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.08014592, y: 0.91436815, z: -0.22341263, w: -0.32801577}
+  m_LocalRotation: {x: -0.08015824, y: 0.9143501, z: -0.2234082, w: -0.32806626}
   m_LocalPosition: {x: 14.5954, y: 11.00509, z: 24.81692}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2064,7 +2064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546950623}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0016234666, y: 0.99156195, z: -0.012476694, w: -0.12902191}
+  m_LocalRotation: {x: -0.0016240033, y: 0.9915564, z: -0.012476629, w: -0.12906459}
   m_LocalPosition: {x: 31.3, y: 5.8, z: 134.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2300,11 +2300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.1
+      value: 7.7
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 465.8
+      value: 614.5
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2879,7 +2879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842210921}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.002722809, y: 0.99060154, z: 0.019936366, w: -0.1352914}
+  m_LocalRotation: {x: 0.0027242028, y: 0.99059206, z: 0.019936182, w: -0.13536061}
   m_LocalPosition: {x: 15.720184, y: 9.214589, z: 133.3712}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3936,6 +3936,7 @@ MonoBehaviour:
   _ringsCollected: 0
   _outroTimeline: {fileID: 1347385159}
   _firstRingToCollect: {fileID: 1008569193}
+  _shipControls: {fileID: 1100969029}
 --- !u!4 &1353980718
 Transform:
   m_ObjectHideFlags: 0
@@ -4393,11 +4394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -41.6
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 251.9
+      value: 314
       objectReference: {fileID: 0}
     - target: {fileID: 2886804978822995797, guid: c36ddc33edbe4314d9e478956957e13c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4818,6 +4819,8 @@ PlayableDirector:
     value: {fileID: 1266221601}
   - key: {fileID: -7083969630251323838, guid: 04dc2349ecbdda749aaa4c9fd889bb97, type: 2}
     value: {fileID: 330585548}
+  - key: {fileID: 4083249588211247070, guid: 04dc2349ecbdda749aaa4c9fd889bb97, type: 2}
+    value: {fileID: 1703691009}
   m_ExposedReferences:
     m_References:
     - 23be6ac4a90bcad499f44c065d0b1c2e: {fileID: 506379541}
@@ -4844,6 +4847,8 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 8b19038291b394647bca813ca85f8b90, type: 2}
     - {fileID: 11400000, guid: 5dc9d99eeba15e94fb3e4b83de9677ba, type: 2}
+    - {fileID: 11400000, guid: 0f556b0899758944e9949f2a760d551e, type: 2}
+    - {fileID: 11400000, guid: 9f7c2a3097e26f54a85a7bd2cf39d5b5, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -4864,6 +4869,34 @@ MonoBehaviour:
         - m_Target: {fileID: 1353980717}
           m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
           m_MethodName: ShowFirstRingToCollect
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1353980717}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: TurnOffShipControls
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1353980717}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: TurnOnShipControls
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4973,7 +5006,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 38d68f17b0f1e5043857a5d2489243a0, type: 3}
+  m_Resource: {fileID: 8300000, guid: ec8ee1714e754024ba8891bafafc844b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.55
   m_Pitch: 1
@@ -16061,7 +16094,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your task is to fly through all 5 green rings.
+  m_text: Your task is to fly through all 6 green rings.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

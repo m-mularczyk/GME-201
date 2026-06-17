@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int _ringsCollected = 0;
     [SerializeField] private PlayableDirector _outroTimeline;
     [SerializeField] private GameObject _firstRingToCollect;
+    [SerializeField] private ShipControls _shipControls;
 
     void Start()
     {
@@ -33,5 +34,15 @@ public class GameManager : MonoBehaviour
     {
         // Launching Outro cutscene
         _outroTimeline.Play();
+    }
+
+    public void TurnOffShipControls()
+    {
+        _shipControls.enabled = false;
+    }
+
+    public void TurnOnShipControls()
+    {
+        _shipControls.enabled = true;
     }
 }
