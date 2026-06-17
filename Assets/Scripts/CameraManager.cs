@@ -1,31 +1,15 @@
-using TMPro;
 using Unity.Cinemachine;
 using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
 
-    [SerializeField]
-    private CinemachineCamera[] _virtualCameras;
-    [SerializeField]
-    private int _nextCameraIndex = 1;
+    [SerializeField] private CinemachineCamera[] _virtualCameras;
+    [SerializeField] private int _nextCameraIndex = 1;
+    [SerializeField] private GameObject[] _collectionsForCameras;
+    [SerializeField] private CinemachineSequencerCamera _cutsceneSequencerCamera;
+    [SerializeField] private GameObject _instructionsTextObject;
 
-    [SerializeField]
-    private GameObject[] _collectionsForCameras;
-
-    [SerializeField]
-    private CinemachineSequencerCamera _cutsceneSequencerCamera;
-
-    [SerializeField]
-    private GameObject _instructionsTextObject;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -55,7 +39,7 @@ public class CameraManager : MonoBehaviour
 
             }
 
-            //Turn off R key input instructions
+            //Turn off input instructions after R key is pressed
             _instructionsTextObject.gameObject.SetActive(false);
         }
     }
@@ -71,13 +55,13 @@ public class CameraManager : MonoBehaviour
     public void PlayCutscene()
     {
 
-        // Obni¿ priorytet wszystkich kamer wirtualnych
+        // Lower (= reset) all virtual cameras priority
         ResetAllVirtualCamerasPriority();
 
-        //Ustaw kamerê sekwencyjn¹ Cutscen'ki na najwy¿szy
+        // Set highest priority to the sequencer camera
         _cutsceneSequencerCamera.Priority = 15;
 
-        // W³¹cz lub wy³¹cz odpowiednie kolekcje obiektów
+        // Enable/Disable given objects collections
         _collectionsForCameras[0].SetActive(true);
         _collectionsForCameras[1].SetActive(false);
     }

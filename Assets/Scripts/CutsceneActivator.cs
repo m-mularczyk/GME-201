@@ -1,7 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
 public class CutsceneActivator : MonoBehaviour
 {
@@ -9,9 +7,9 @@ public class CutsceneActivator : MonoBehaviour
     private CameraManager _cameraManager;
 
     [SerializeField] private float _timeWaiting = 5f;
+    [SerializeField] private bool _cutsceneIsPlaying = false;
     //[SerializeField] private bool _mouseNotMoving = false;
     //[SerializeField] private bool _timerIsCounting = false;
-    [SerializeField] private bool _cutsceneIsPlaying = false;
 
     private Vector3 _mousePosition;
     private Vector3 _lastMousePosition;
@@ -78,7 +76,6 @@ public class CutsceneActivator : MonoBehaviour
     {
         //_timerIsCounting = true;
         yield return new WaitForSeconds(_timeWaiting);
-        //Debug.Log("5 seconds without input");
         _cameraManager.PlayCutscene();
         _cutsceneIsPlaying = true;
         Debug.Log("Cutscene activated");
